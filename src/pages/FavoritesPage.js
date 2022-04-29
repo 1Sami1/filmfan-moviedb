@@ -1,7 +1,7 @@
 function FavoritesPage(){
     return (
         <section className="favs-page">
-            <h2>Favs Page</h2>
+            <h2>Favorites</h2>
         </section>
     )
 }

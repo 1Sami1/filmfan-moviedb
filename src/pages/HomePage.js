@@ -3,9 +3,15 @@
 
 function HomePage() {
     return(
-        <section className="favs-page">
-            <h2>Home Page</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga dolore harum sint quo vero illo ullam, sed tenetur, ex alias suscipit autem pariatur assumenda. Fuga blanditiis consequuntur voluptatibus sunt.</p>
+        <section className="home-page">
+            <div className="browse-by">
+                <h3>Top Rated</h3>
+                <h3>Popular</h3>
+                <h3>Upcoming</h3>
+                <h3>Now Playing</h3>
+
+            </div>
+            <p>Movie boxes to be placed</p>
         </section>
     )
     

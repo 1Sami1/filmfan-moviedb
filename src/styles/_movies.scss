@@ -1,0 +1,19 @@
+.home-page{
+    .browse-by{
+        margin: 0 auto;
+        margin-top: 5.5rem;
+        padding: 5px;
+        display: flex;
+        width: fit-content;
+        align-content: center;
+        justify-content: center;
+        background-color: #25283D;
+        border-radius: 2.5rem;
+        color: white;
+        h3{
+            padding: 7px;
+            margin: 0;
+            font-size: 13px;
+        }
+    }
+}
