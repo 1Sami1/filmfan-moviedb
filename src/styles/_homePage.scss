@@ -1,0 +1,19 @@
+.home-page{
+    .browse-by{
+        margin: 0 auto;
+        display: flex;
+        background-color: #25283D;
+        border-radius: 2.5rem;
+        color: white;
+        }
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                &:visited{
+                    color: white;
+            }
+            }
+            
+        }
+    }

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 function Nav() {
     return(
-        <nav>
+        <nav className='site-nav'>
             <ul>
                 <li><NavLink tabIndex={1} to="/">Home</NavLink></li>
                 <li><NavLink tabIndex={2} to="/about">About</NavLink></li>

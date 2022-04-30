@@ -14,7 +14,11 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path= "/" element={<HomePage />} />
+            <Route path= "/" element={<HomePage sort='popular' />} />
+              <Route path="/sort/top-rated" element={<HomePage sort='top_rated'/>} />
+              <Route path="/sort/popular" element={<HomePage sort='popular'/>} />
+              <Route path="/sort/upcoming" element={<HomePage sort='upcoming' />} />
+              <Route path="/sort/now-playing" element={<HomePage sort='now_playing' />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/favs" element={<FavoritesPage />} />
 
