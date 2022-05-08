@@ -1,7 +1,10 @@
-.home-page{
+
     .browse-by{
-        margin: 0 auto;
+        width: fit-content;
+        padding: 1rem;
         display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
         background-color: #25283D;
         border-radius: 2.5rem;
         color: white;
@@ -10,10 +13,10 @@
             list-style: none;
             a{
                 text-decoration: none;
+                color: white;
                 &:visited{
                     color: white;
             }
             }
             
         }
-    }

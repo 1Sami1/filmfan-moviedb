@@ -1,4 +1,14 @@
 header{
     background-color: #25283D;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     color: white;
+    .site-nav{
+        margin-top: auto;
+        padding: 1rem;
+    }
+    img{
+        width: 100px;
+        padding: 1rem;
+    }
 }
