@@ -3,6 +3,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
+    width: auto;
     .site-nav{
         margin-top: auto;
         padding: 1rem;
@@ -10,5 +11,12 @@ header{
     img{
         width: 100px;
         margin-left: 5.5rem;
+    }
+}
+
+
+@media (max-width:600px) {
+    .site-nav{
+        visibility: hidden;
     }
 }
