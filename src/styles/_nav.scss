@@ -1,12 +1,21 @@
 .site-nav{
-    ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5.5rem;
+    .nav-ul{
         list-style: none;
         display: flex;
-        margin: 0;
-        padding: 0;
+        margin: 1rem;
+        justify-content: space-between;
     }
     li{
-        flex: .5;
+        padding: 1rem;
+        img{
+            width: 12px;
+            margin-left: 1rem;
+            padding: 0;
+        }
         a{
             color: white;
             text-decoration: none;
@@ -20,5 +29,11 @@
         }
         }
         
+    }
+}
+
+@media (max-width: 510px) {
+    .nav-ul{
+        visibility: hidden;
     }
 }
