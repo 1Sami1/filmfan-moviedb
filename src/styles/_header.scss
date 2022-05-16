@@ -1,9 +1,8 @@
 header{
     background-color: #25283D;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     color: white;
-    width: auto;
     .site-nav{
         margin-top: auto;
         padding: 1rem;
