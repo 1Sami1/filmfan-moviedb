@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import  search  from '../images/magnifying-glass-solid.svg'; 
+import { Twirl as Hamburger } from 'hamburger-react'
 
 function Nav() {
     return(
