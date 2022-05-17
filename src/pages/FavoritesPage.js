@@ -6,7 +6,10 @@ function FavoritesPage(){
         <section className="favs-page">
             <h2>Favorites</h2>
             <p className='faves-p'>No Movies have been added to Favorites.<br/>Add a movie by clicking 'heart' on the movie cards </p>
-            <Link className="link" to="/">Back To Home</Link>
+            <div className='link-div'>
+                <Link className="link" to="/">Back To Home</Link>
+            </div>
+            
         </section>
     )
 }
