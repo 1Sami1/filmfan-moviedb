@@ -1,21 +1,11 @@
 header{
     background-color: #25283D;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    color: white;
-    .site-nav{
-        margin-top: auto;
-        padding: 1rem;
-    }
-    img{
-        width: 100px;
-        margin-left: 5.5rem;
-    }
-}
-
-
-@media (max-width:600px) {
-    .site-nav{
-        visibility: hidden;
+    align-items: center;
+    .site-logo{
+        width: 75px;
+        margin-left: 2rem;
     }
 }

@@ -7,7 +7,7 @@ import logo from '../images/Logo.png';
 function Header() {
     return(
         <header className='site-header'>
-            <img src={logo} alt="" />
+            <Link to="/"><img className='site-logo' src={logo} alt="Green FilmFanDB Logo" /></Link>
             <Nav />
         </header>
     );

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import  search  from '../images/magnifying-glass-solid.svg'; 
+import {BiSearchAlt} from 'react-icons/bi'
 import { Twirl as Hamburger } from 'hamburger-react'
+import Burger from './Burger'
 
 function Nav() {
     return(
@@ -9,8 +10,11 @@ function Nav() {
                 <li><NavLink tabIndex={1} to="/">Home</NavLink></li>
                 <li><NavLink tabIndex={2} to="/about">About</NavLink></li>
                 <li><NavLink tabIndex={3} to="/favs">Favorites</NavLink></li>
-                <li><img src={search} alt=""/></li>
+                <li><BiSearchAlt /></li>
             </ul>
+            <div className='burger-menu'>
+                <Burger />
+            </div>
         </nav>
     )
 }
