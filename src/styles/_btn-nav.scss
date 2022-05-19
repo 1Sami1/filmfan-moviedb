@@ -1,5 +1,5 @@
 // Button Main Nav Styles
-
+@use './variables' as *;
 @use './utilities/functions' as *;
 @use './utilities/mixins' as *;
 
@@ -12,7 +12,8 @@
     @include flatten;
     border: none;
     background: none;
-    margin-right: em(12);
+    
+   
 
     &:hover{
         cursor: pointer;
@@ -21,7 +22,7 @@
     .burger{
         width: 50px;
         height: 5px;
-        background-color: black;
+        background-color: $greenColor;
         display: block;
         margin: 8px auto;
         transition: all 0.3s ease-in-out;
@@ -30,7 +31,7 @@
             width: 0;
         }
 
-        .show &:nth-child(1), .btn-main-nav.show .line:nth-child(3){
+        .show &:nth-child(1), .btn-nav.show .burger:nth-child(3){
             transition-delay: 0.3s;
         }
 
@@ -50,7 +51,7 @@
         transform: rotate(45deg);
     }
 
-    @media (min-width: em(600)){
+    @media (min-width: 750px){
         display: none;
     }
 

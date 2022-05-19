@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import {BiSearchAlt} from 'react-icons/bi'
 import { Twirl as Hamburger } from 'hamburger-react'
-import Burger from './Burger'
+
 
 function Nav({handleShowHideNav}) {
 

@@ -29,7 +29,7 @@
        
     }
 
-    @media (min-width: em(600)){
+    @media (min-width: 750px){
         height: auto;
         visibility: visible;
         transition: none;
@@ -39,7 +39,7 @@
             height: auto;
         }
         
-        ul {
+        .nav-ul {
             display: flex;
         }
 
