@@ -1,5 +1,13 @@
 .site-nav{
     margin-right: 2rem;
+    visibility: hidden;
+    transition: height 0.5s ease, visibility 0s 0.5s;
+
+    .show & {
+        transition: height 0.5s ease, visibility 0s;
+        visibility: visible;
+        height: 254px;
+    }
     .nav-ul{
         display: flex;
         padding: 0;
@@ -20,5 +28,37 @@
         }
        
     }
+
+    @media (min-width: em(600)){
+        height: auto;
+        visibility: visible;
+        transition: none;
+
+        .show & {
+            transition: none;
+            height: auto;
+        }
+        
+        ul {
+            display: flex;
+        }
+
+        li {
+            flex: 1;
+        }
+
+        a {
+            padding: 0;
+            text-align: center;
+            border-top:  none;
+            @at-root .main-nav li:not(:first-child) a {
+                border-top: none;
+                border-left: 3px solid grey;
+            }
+        }
+
+    }
+
 }
+
 
