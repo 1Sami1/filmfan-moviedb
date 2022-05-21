@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import AboutPage from '../pages/AboutPage';
 import FavoritesPage from '../pages/FavoritesPage';
 import HomePage from '../pages/HomePage';
+import SingleMoviePage from '../pages/SingleMoviePage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Route path="/sort/popular" element={<HomePage sort='popular'/>} />
               <Route path="/sort/upcoming" element={<HomePage sort='upcoming' />} />
               <Route path="/sort/now-playing" element={<HomePage sort='now_playing' />} />
+              <Route path="/movie/:id" element={<SingleMoviePage/>} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/favs" element={<FavoritesPage />} />
 
