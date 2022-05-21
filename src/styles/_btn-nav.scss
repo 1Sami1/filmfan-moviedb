@@ -12,7 +12,8 @@
     @include flatten;
     border: none;
     background: none;
-    
+    position: absolute; 
+    right: 2rem;
    
 
     &:hover{
@@ -22,6 +23,7 @@
     .burger{
         width: 50px;
         height: 5px;
+        border-radius: 40px;
         background-color: $greenColor;
         display: block;
         margin: 8px auto;
@@ -32,7 +34,7 @@
         }
 
         .show &:nth-child(1), .btn-nav.show .burger:nth-child(3){
-            transition-delay: 0.3s;
+            transition-delay: 0.1s;
         }
 
         .show &:nth-child(1){
