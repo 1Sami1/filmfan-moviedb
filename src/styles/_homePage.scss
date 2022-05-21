@@ -1,10 +1,9 @@
 .browse-by{
-    text-align: center;
     display: flex;
     justify-content: center;
     background-color: #25283D;
     padding: .5rem;
-    width: 300px;
+    width: 250px;
     box-sizing: content-box;
     margin: 0 auto;
     margin-top: 5rem;
@@ -12,8 +11,8 @@
     
     .facet-link{
         list-style: none;
-        font-size: 9.5px;
-        padding: .5rem;      
+        font-size: 9.4px;
+        padding: .2rem;      
     }
     a{
         text-decoration: none;
@@ -25,5 +24,17 @@
             color: #0CCE6B;
         }
     }
+    @media (min-width: 600px) {
+            width: 380px;
+            
+        .facet-link{
+            font-size: 12px;
+            padding-right: 1rem ;
+        }
+        
+    }
 }
+
+
+
     

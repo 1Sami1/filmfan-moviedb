@@ -1,11 +1,12 @@
 .movies-container{
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 10px;
-    
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .movie-card{
-        width: 150px;
+        width: 200px;
+        margin: 1rem;
     }
 
 }
