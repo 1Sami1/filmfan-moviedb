@@ -3,7 +3,6 @@
 
 .site-nav{
     width: 100%;
-    // background-color: $bgColor;
     height: 0; 
     visibility: hidden;
     overflow: hidden;
@@ -16,15 +15,13 @@
         height: 254px;
     }
     .nav-ul{
-        @include flatten($is-list: true);
-
+        list-style: none;
         li{
             a{
                 color: white;
                 text-decoration: none;
                 display: block;
-                font-size: 1.5em;
-                margin-top: 2rem;
+                font-size: 1rem;
                 font-weight: bold;
                 &:hover,
                 &:focus,
@@ -36,6 +33,10 @@
         }
        
     }
+}
+.site-nav{
+
+
 
     @media (min-width: 750px){
         height: auto;
@@ -50,8 +51,8 @@
         .nav-ul{
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             margin-right: 3rem;
-            padding: 0;
             li{
                 list-style: none;
                 color: white;
@@ -59,6 +60,7 @@
                 a{
                     font-weight: 400;
                     text-decoration: none;
+               
                     &:visited{
                         color: white;
                     }
