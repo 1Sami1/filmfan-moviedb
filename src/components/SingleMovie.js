@@ -15,7 +15,10 @@ function SingleMovie({ movie }) {
         </div>
         <div className="single-movie-info">
             <h2>{movie.title}</h2>
+            <p>{movie.release_date}</p>
             <p>{movie.overview}</p>
+            <p>{movie.vote_average}</p>
+            
         </div>
       </>
   )

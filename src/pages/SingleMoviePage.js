@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleMovie from "../components/SingleMovie";
 import { API_KEY } from "../globals/globals";
-
+import {Link} from 'react-router-dom';
+ 
 function PageSingleMovie() {
 
   const [movieData, setMovieData] = useState(false);
@@ -52,10 +53,15 @@ function PageSingleMovie() {
   }, []);
 
   return (
+    <>
     <section className='single-movie-container'>
         {error !== false && <p className="api-error">{error}</p>}
         {movieData !== false && <SingleMovie movie={movieData} />}
     </section>
+    <div className='link-div'>
+    <Link className="link" to="/">Back To Home</Link>
+    </div>
+    </>
   )
 }
 
