@@ -3,6 +3,8 @@ import noPoster from '../images/no-movie-poster.jpg';
 
 
 function movieCard( { movie } ) {
+    const MOVIE_OVERVIEW = movie.overview;
+
     return(
         <div className='movie-card'>
             <div className="movie-poster">
@@ -13,8 +15,14 @@ function movieCard( { movie } ) {
             </div>
 
             <div className="movie-info">
-                {/* <h3>{movie.title}</h3> */}
+                <h3>{movie.vote_average}</h3>
+                
+            </div>
+            <div className='on-hover'>
+                <h3 className='hover-title'>{movie.title}</h3>
+                <p className='hover-overview'>{MOVIE_OVERVIEW.substr(0,110)}...</p>
                 <Link to={`/movie/${movie.id}`}>More Info</Link>
+                <p>{movie.release_date}</p>
             </div>
             
 
