@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .favs-page{
     h2{
         text-align: center;
@@ -17,6 +19,7 @@
         color: white;
         padding: 1rem;
         border-radius: 20px;
+        border: 5px solid $greenColor;
     }
     .link-div{
         display: flex;

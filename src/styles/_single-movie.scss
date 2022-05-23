@@ -1,17 +1,42 @@
-.single-movie-container {
+@use 'variables' as *;
 
+.single-movie-container {
     position: relative;
     width: 90%;
     max-width: 700px;
     margin: 30px auto;
-    border: 5px solid white;
+    border: 5px solid $greenColor;
+    border-radius: 20px;
     padding: 20px;
     background-color: rgba(black, 0.6);
-
+    margin-top: 5rem;
     .single-movie-poster,
     .single-movie-info {
         position: relative;
         z-index: 2;
+    }
+    .single-title{
+        text-align: center;
+        font-size: 1.85rem;
+        color: white;
+        text-shadow: 4px 3px 8px rgba(0, 0, 0, 1 );
+    }
+    .single-date{
+        text-align: center;
+        
+        color: white;
+        text-shadow: 4px 3px 8px rgba(0, 0, 0, 1 );
+    }
+    .single-overview{
+        text-align: center;
+        color: white;
+        text-shadow: 4px 3px 8px rgba(0, 0, 0, 1 );
+    }
+    .single-rating{
+        color: $greenColor;
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 4px 3px 8px rgba(0, 0, 0, 1 );
     }
 
     .single-movie-backdrop {
@@ -20,10 +45,13 @@
         height: 100%;
         top: 0;
         left: 0;
+        border-radius: 20px;
         background-size: cover;
         opacity: 0.3;
         z-index: 1;
     }
+
+    
 
     p {
         line-height: 1.4;
@@ -31,6 +59,7 @@
 
     @media (min-width: 600px){
         display: flex;
+        margin-top: 5rem;
 
         .single-movie-poster {
             flex: 0 0 200px;
@@ -40,3 +69,15 @@
     }
 
 }
+.single-link-div{
+        display: flex;
+        .single-link{
+            text-decoration: none;
+            color: #25283D;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 1rem;
+            font-weight: 700;
+            margin-bottom: 5rem;
+        }
+    }

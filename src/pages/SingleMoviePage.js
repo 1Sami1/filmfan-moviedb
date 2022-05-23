@@ -58,8 +58,8 @@ function PageSingleMovie() {
         {error !== false && <p className="api-error">{error}</p>}
         {movieData !== false && <SingleMovie movie={movieData} />}
     </section>
-    <div className='link-div'>
-    <Link className="link" to="/">Back To Home</Link>
+    <div className='single-link-div'>
+      <Link className="single-link" to="/">Back To Home</Link>
     </div>
     </>
   )
