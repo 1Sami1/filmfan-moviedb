@@ -16,13 +16,20 @@
     }
     .nav-ul{
         list-style: none;
+        display: block;
+        text-align: center;
         li{
+            
+            margin-bottom: 2rem;
             a{
+                margin-top: 2rem;
+                margin-right: 2rem;
                 color: white;
                 text-decoration: none;
                 display: block;
-                font-size: 1rem;
+                font-size: 2rem;
                 font-weight: bold;
+                text-shadow: 2px 2px 3px #0CCE6B;
                 &:hover,
                 &:focus,
                 &:active {
@@ -54,12 +61,18 @@
             align-items: center;
             margin-right: 8rem;
             li{
+                
                 list-style: none;
                 color: white;
                 padding: 1rem;
+                margin-bottom: 0;
+                
                 a{
                     font-weight: 400;
+                    font-size: 1rem;
                     text-decoration: none;
+                    margin-top: 0;
+                    margin-right: 0;
                
                     &:visited{
                         color: white;

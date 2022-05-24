@@ -20,6 +20,16 @@
         padding: 1rem;
         border-radius: 35px;
         border: 5px solid $greenColor;
+        .tmdb-color{
+            color: #01b4e4;
+            }
+    }
+    .tmdb-logo{
+        display: block;
+       margin: 0 auto;
+        margin-top: 1rem;
+        width: 50px;
+
     }
     @media (min-width: 760px) {
     h2{
@@ -29,6 +39,7 @@
         margin-left: 10rem;
         margin-right: 10rem;
     }
+    
 }
 
 @media (min-width: 1200px) {

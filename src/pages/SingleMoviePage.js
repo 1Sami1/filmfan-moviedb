@@ -52,8 +52,12 @@ function PageSingleMovie() {
 
   }, []);
 
+  
+
   return (
     <>
+    
+
     <section className='single-movie-container'>
         {error !== false && <p className="api-error">{error}</p>}
         {movieData !== false && <SingleMovie movie={movieData} />}

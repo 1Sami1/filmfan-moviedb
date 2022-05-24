@@ -1,10 +1,14 @@
 import noPoster from '../images/no-movie-poster.jpg';
-import {AiFillStar} from 'react-icons/ai'
+import {AiFillStar} from 'react-icons/ai';
+
 
 function SingleMovie({ movie }) {
+  
 
   return (
       <>
+
+      
         <div className="single-movie-backdrop"
             style={{
                 backgroundImage: movie.backdrop_path !== null && `url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`

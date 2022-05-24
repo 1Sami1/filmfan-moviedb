@@ -36,7 +36,7 @@ function HomePage({sort}) {
                 // Reset the error if it is not false...
                 error !== false && setError(false);
                 // Grab the first 12 movies from the API
-                const first12Movies = data.results.splice(0,12);
+                const first12Movies = data.results.splice(0,24);
                 setMoviesData(first12Movies);
             }
             
