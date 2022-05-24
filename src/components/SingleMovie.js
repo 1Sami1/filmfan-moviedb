@@ -1,5 +1,6 @@
 import noPoster from '../images/no-movie-poster.jpg';
 import {AiFillStar} from 'react-icons/ai';
+import {BsFillSuitHeartFill} from 'react-icons/bs'
 
 
 function SingleMovie({ movie }) {
@@ -23,7 +24,7 @@ function SingleMovie({ movie }) {
             <h2 className='single-title'>{movie.title}</h2>
             <p className='single-date'>{movie.release_date}</p>
             <p className='single-overview'>{movie.overview}</p>
-            <p className='single-rating'>{movie.vote_average}<AiFillStar className='rating-star' /></p>
+            <p className='single-rating'>{movie.vote_average}<AiFillStar className='rating-star' /><button className='fave-btn'><BsFillSuitHeartFill /></button></p>
         </div>
       </>
   )
