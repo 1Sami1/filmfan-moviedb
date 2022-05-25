@@ -1,10 +1,26 @@
 import { Link } from 'react-router-dom';
 import noPoster from '../images/no-movie-poster.jpg';
 import React, {useState} from 'react';
+import { favourite, unFavourite } from "../faves-utilities/favSlice";
+import FavButton from './FavButton';
+import { useDispatch } from "react-redux";
 
 
 
-function MovieCard( { movie } ) {
+
+function MovieCard( { movie, isFav } ) {
+
+
+    const dispatch = useDispatch();
+
+  function handleFavClick(addToFav, obj){
+    if(addToFav === true){
+        dispatch(favourite(obj));
+    }else{
+        dispatch(unFavourite(obj));
+    }   
+}
+
     const MOVIE_OVERVIEW = movie.overview;
 
     const [isShown, setIsShown] = useState(false);

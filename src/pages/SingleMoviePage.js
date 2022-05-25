@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import isFav from '../faves-utilities/isFav';
 import SingleMovie from "../components/SingleMovie";
 import { API_KEY } from "../globals/globals";
 import {Link} from 'react-router-dom';
@@ -8,6 +10,7 @@ function PageSingleMovie() {
 
   const [movieData, setMovieData] = useState(false);
   const [error, setError] = useState(false);
+  const favs = useSelector((state) => state.favs.items);
 
   const errorMessage = 'Oh no...Something went wrong...Please try again later.';
 
@@ -60,7 +63,7 @@ function PageSingleMovie() {
 
     <section className='single-movie-container'>
         {error !== false && <p className="api-error">{error}</p>}
-        {movieData !== false && <SingleMovie movie={movieData} />}
+        {movieData !== false && <SingleMovie movie={movieData} isFav={isFav(favs, null, id)} />}
     </section>
     <div className='single-link-div'>
       <Link className="single-link" to="/">Back To Home</Link>
