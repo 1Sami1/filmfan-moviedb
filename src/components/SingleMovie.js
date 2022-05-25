@@ -37,7 +37,7 @@ function SingleMovie({ movie, isFav }) {
             <h2 className='single-title'>{movie.title}</h2>
             <p className='single-date'>{movie.release_date}</p>
             <p className='single-overview'>{movie.overview}</p>
-            <p className='single-rating'>{movie.vote_average}<AiFillStar className='rating-star' /><button className='fave-btn'><BsFillSuitHeartFill /></button></p>
+            <p className='single-rating'>{movie.vote_average}<AiFillStar className='rating-star' /></p>
         </div>
         <div className='fav-btn'>
                 {isFav ? 
