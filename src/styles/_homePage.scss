@@ -5,7 +5,7 @@
     justify-content: center;
     background-color: #25283D;
     padding: .5rem;
-    width: 250px;
+    width: 290px;
     box-sizing: content-box;
     margin: 0 auto;
     margin-top: 5rem;
@@ -15,12 +15,13 @@
     
     .facet-link{
         list-style: none;
-        font-size: 9.4px;
-        padding: .2rem;      
+        padding: .3rem;      
     }
     a{
         text-decoration: none;
         color: white;
+        font-size: 14px;
+        font-weight: 700;
         &:visited{
             color: white;
         }
@@ -32,8 +33,10 @@
             width: 380px;
             
         .facet-link{
-            font-size: 12px;
-            padding-right: 1rem ;
+            padding-right: 1rem;
+        }
+        a{
+            font-size: 1rem;
         }
         
     }
