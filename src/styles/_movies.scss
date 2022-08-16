@@ -8,15 +8,11 @@
     .movie-card{
         width: 200px;
         margin: 1rem;
-        height: 370.740px;
     }
 
     @media (min-width: 750px) {
         margin-right: 8rem;
         margin-left: 8rem;
-        // .movie-card{
-        //     width: 140px;
-        // }
         
     }
 
@@ -26,9 +22,11 @@
 // Movie card styling || Mobile View
 
 .movie-card{
+    transition: all 0.3s ease;
     .movie-poster{
         position: relative;
         overflow: hidden;
+        transition: all 0.3s ease;
     }
     .movie-info{
         text-shadow: 4px 3px 8px rgba(37,40,61, 1);
@@ -38,19 +36,21 @@
         font-size: 1.5rem;
         bottom: 1.5rem;
         z-index: 100;
+        transition: all 0.3s ease;
     }
     .on-hover{
         font-size: .7rem;
+        transition: all 0.3s ease;
         position: absolute;
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         text-align: center;
         z-index: 1;
         top: 0;
-        bottom: 0rem;
+        bottom: 4px;
         display: grid;
+        
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr), 1rem;
         .hover-link{
             color: white;
             height: 25px;
@@ -66,43 +66,20 @@
             font-size: 1.3rem;
             text-shadow:  3px 3px 7px #000000;
             margin: 5px;
+            transition: all 0.3s ease;
         }
         .hover-date{
             font-size: 1rem;
+            margin: 0;
         }
         .hover-overview{
             margin: 10px;
         }
     }
 }
-//         @media (min-width:750px) {
-//             .hover-title{
-//                 font-size: .8rem;
-//                 margin: 10px;
-//             }
-//             .hover-overview{
-//                 font-size: .5rem;
-//             }
-//             .hover-link{
-//                 font-size: .6rem;
-//             }
-//             .hover-date{
-//                 font-size: 0.7rem;
-//                 padding-bottom: 2rem;
-//             }
-//         }
 
+.movie-poster:hover .black-bg{
+    opacity: .85;
+    transition: all 0.3s ease;
 
-//     }
-//     @media (min-width:750px) {
-//         .movie-card{
-//             margin: 0;
-//         height: 188px;
-//         }
-        
-//         .movie-info{
-//             bottom: 1.3rem;
-//             font-size: 1.2rem;
-//         }
-//     }
-// }
+}

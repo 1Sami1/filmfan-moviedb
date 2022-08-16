@@ -39,17 +39,17 @@ function MovieCard( { movie, isFav } ) {
                 }
                 {isShown && (
                     <div className='on-hover'>
+
                         <span className='black-bg'></span>
-                        <h3 className='hover-title'>{movie.title}</h3>
+                        <h3 className='hover-title'>{movie.title}</h3> 
+                        <h3 className='hover-rating'>{movie.vote_average}</h3>
                         <p className='hover-overview'>{MOVIE_OVERVIEW.substr(0,110)}...</p>
                         <Link className='hover-link' to={`/movie/${movie.id}`}>More Info</Link>
                         <p className='hover-date'>{movie.release_date}</p>
                     </div>
                 )}
             </div>
-            <div className="movie-info">
-                <h3 className='rating'>{movie.vote_average}</h3>
-            </div>
+            
         </div>
         </>
     )
