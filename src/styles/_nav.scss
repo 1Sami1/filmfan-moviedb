@@ -30,7 +30,7 @@
                 text-decoration: none;
                 display: block;
                 font-size: 2.3rem;
-                font-weight: bold;
+                font-weight: 700;
                 width: auto;
                 text-shadow: 2px 2px 3px #0CCE6B;
                 &:hover,
@@ -69,12 +69,12 @@
                 list-style: none;
                 color: white;
                 padding: 1rem;
-                margin-bottom: 0;
-                
                 a{
-                    font-weight: 400;
-                    font-size: 1rem;
+                    font-weight: 700;
+                    font-size: 1.3rem;
                     text-decoration: none;
+                    padding: .5rem;
+                    border-radius: 40px;
                     margin-top: 0;
                     margin-right: 0;
                
