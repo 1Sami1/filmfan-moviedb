@@ -2,6 +2,7 @@ import noPoster from '../images/no-movie-poster.jpg';
 import {AiFillStar} from 'react-icons/ai';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
 import  {useDispatch}  from "react-redux";
+import {format} from "date-fns"
 import FavButton from './FavButton';
 import { favourite, unFavourite } from "../faves-utilities/favSlice";
 
@@ -19,6 +20,21 @@ function SingleMovie({ movie, isFav }) {
     }  
      
 }
+    // turn API runtime into mins and seconds
+    let runTime = (movie.runtime);
+    let hours = Math.floor(runTime /60);
+    let minutes = runTime % 60;
+
+    // Movie release date formatted version
+    let date = "";
+    // error handling for release dates
+    if (movie.release_date === undefined || movie.release_date === ""){
+        date = 1920-4-20;
+    } else {
+        date = new Date(movie.release_date);
+    }
+    const formattedDate = format(date, "MMMM do, yyyy");
+
   
 
   return (
@@ -35,7 +51,17 @@ function SingleMovie({ movie, isFav }) {
         </div>
         <div className="single-movie-info">
             <h2 className='single-title'>{movie.title}</h2>
-            <p className='single-date'>{movie.release_date}</p>
+            <p className='single-tagline'>{movie.tagline}</p>
+            
+            <ul className='single-genres'>
+                {movie.genres.map(genreList => <li key={genreList.id}>{genreList.name}</li>)}
+            </ul>
+
+            <div className='single-div-times'>
+                <p className='single-runtime'>{`${hours}h ${minutes}min`}</p>
+                <p className='single-date'>{formattedDate}</p>
+            </div>
+            
             <p className='single-overview'>{movie.overview}</p>
             <p className='single-rating'>{movie.vote_average}<AiFillStar className='rating-star' /></p>
         </div>
