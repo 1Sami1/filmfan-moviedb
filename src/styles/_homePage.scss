@@ -59,12 +59,24 @@
         margin-right: 1rem;
         width: 130px;
         padding: 0.5rem;
+        color: white;
+        background-color: $bgColor;
+        border: 3px solid $greenColor;
+        border-radius: 30px;
+        cursor: pointer;
     }
     .top-btn{
         font-size: 1.3rem;
         width: 130px;
         padding: 0.5rem;
-
+        color: white;
+        background-color: $bgColor;
+        border: 3px solid $greenColor;
+        border-radius: 30px;
+        cursor: pointer;
+    }:hover{
+        background-color: $greenColor;
+        border: 3px solid #25283D;
     }
 }
 

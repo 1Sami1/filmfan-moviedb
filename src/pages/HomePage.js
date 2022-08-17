@@ -1,4 +1,5 @@
 import BrowseBy from "../components/BrowseBy";
+import BsFillArrowUpSquareFill from 'react-icons/bs'
 import { useEffect, useState, useCallback } from 'react';
 import Movies from '../components/Movies';
 import { API_KEY } from '../globals/globals';
@@ -57,7 +58,7 @@ function HomePage({sort}) {
             {moviesData  && <Movies moviesData={moviesData}  />}
             <div className="btns-div">
                 {canLoadMore && <button onClick={handleLoadMore} className="load-more">Load More</button>}         
-            <button className="top-btn" onClick={scrollToTop}>TOP</button>
+            <button className="top-btn" onClick={scrollToTop}>To Top</button>
             </div>
             
         </section>
