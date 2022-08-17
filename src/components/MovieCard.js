@@ -3,6 +3,7 @@ import noPoster from '../images/no-movie-poster.jpg';
 import React, {useState} from 'react';
 import { favourite, unFavourite } from "../faves-utilities/favSlice";
 import FavButton from './FavButton';
+import {format} from "date-fns"
 import { useDispatch } from "react-redux";
 
 
@@ -20,6 +21,7 @@ function MovieCard( { movie, isFav } ) {
         dispatch(unFavourite(obj));
     }   
 }
+
 
     const MOVIE_OVERVIEW = movie.overview;
 
@@ -39,13 +41,11 @@ function MovieCard( { movie, isFav } ) {
                 }
                 {isShown && (
                     <div className='on-hover'>
-
                         <span className='black-bg'></span>
-                        <h3 className='hover-title'>{movie.title}</h3> 
-                        <h3 className='hover-rating'>{movie.vote_average}</h3>
+                        <h3 className='hover-title'>{movie.title}</h3>
                         <p className='hover-overview'>{MOVIE_OVERVIEW.substr(0,110)}...</p>
                         <Link className='hover-link' to={`/movie/${movie.id}`}>More Info</Link>
-                        <p className='hover-date'>{movie.release_date}</p>
+                        
                     </div>
                 )}
             </div>

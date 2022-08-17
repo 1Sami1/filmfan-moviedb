@@ -28,49 +28,33 @@
         overflow: hidden;
         transition: all 0.3s ease;
     }
-    .movie-info{
-        text-shadow: 4px 3px 8px rgba(37,40,61, 1);
-        color: $greenColor;
-        position: relative;
-        text-align: center;
-        font-size: 1.5rem;
-        bottom: 1.5rem;
-        z-index: 100;
-        transition: all 0.3s ease;
-    }
     .on-hover{
-        font-size: .7rem;
         transition: all 0.3s ease;
         position: absolute;
         color: white;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.8);
         text-align: center;
         z-index: 1;
         top: 0;
         bottom: 4px;
         display: grid;
-        
         grid-template-columns: 1fr;
         .hover-link{
             color: white;
             height: 25px;
-            padding: 4px;
+            padding: 2px;
             font-size: 1rem;
             text-decoration: none;
             margin: .3rem 2.5rem ;
-            padding: 0;
             background-color: $greenColor;
             border-radius: 20px;
         }
         .hover-title{
-            font-size: 1.3rem;
+            font-size: 1.7rem;
             text-shadow:  3px 3px 7px #000000;
+            text-shadow: 2px 2px 3px #0CCE6B;
             margin: 5px;
             transition: all 0.3s ease;
-        }
-        .hover-date{
-            font-size: 1rem;
-            margin: 0;
         }
         .hover-overview{
             margin: 10px;
