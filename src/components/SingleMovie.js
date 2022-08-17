@@ -53,9 +53,9 @@ function SingleMovie({ movie, isFav }) {
             <h2 className='single-title'>{movie.title}</h2>
             <p className='single-tagline'>{movie.tagline}</p>
             
-            <ul className='single-genres'>
-                {movie.genres.map(genreList => <li key={genreList.id}>{genreList.name}</li>)}
-            </ul>
+           
+            {movie.genres && movie.genres.length > 0 && <p className="single-genres">{movie.genres.map((genre) => genre.name).join(', ')}</p>}
+            
 
             <div className='single-div-times'>
                 <p className='single-runtime'>{`${hours}h ${minutes}min`}</p>
