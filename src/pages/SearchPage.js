@@ -46,7 +46,7 @@ function SearchPage(searchInput) {
 
     return (
         <div className='search-page'>
-        <h1>Search Results</h1>
+        <h2 className='search-h2'>Search Results</h2>
 
         {searchError !== false && <p className="error">{searchError}</p>}
         {searchData !== false && <SearchGrid searchData={searchData}/>}
