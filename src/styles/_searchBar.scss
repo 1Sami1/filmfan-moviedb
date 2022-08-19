@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+.search-wrapper{
+    margin: 0 auto;
+    margin-top: 3rem;
+    
+    .search-bar{
+        border: 3px solid $greenColor;
+        background-color:white;
+        font-size: 1.1rem;
+        color: black;
+        padding: 5px;
+        border-radius: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .search-wrapper{
+        .search-bar{
+            margin-right: 4rem;
+        }
+    }
+}

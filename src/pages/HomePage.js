@@ -54,7 +54,6 @@ function HomePage({sort}) {
 
     return(
         <section className="home-page">
-            <SearchBar />
             <BrowseBy /> 
             {moviesData  && <Movies moviesData={moviesData}  />}
             <div className="btns-div">
