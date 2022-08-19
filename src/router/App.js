@@ -11,7 +11,7 @@ import SearchPage from '../pages/SearchPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='FilmFanDB'  >
       <div className="wrapper">
         <Header />
         <main>
