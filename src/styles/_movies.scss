@@ -59,6 +59,17 @@
         .hover-overview{
             margin: 10px;
         }
+        .movie-rating{
+            color: $greenColor;
+            text-shadow: 4px 3px 8px #0CCE6B;
+             .empty-star{
+                color: white;
+            }
+            .score-rating{
+                color: white;
+                 
+            }
+        }
     }
 }
 
