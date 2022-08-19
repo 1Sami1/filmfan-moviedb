@@ -1,10 +1,10 @@
 import noPoster from '../images/no-movie-poster.jpg';
 import {AiFillStar} from 'react-icons/ai';
-import {BsFillSuitHeartFill} from 'react-icons/bs';
 import  {useDispatch}  from "react-redux";
 import {format} from "date-fns"
 import FavButton from './FavButton';
 import { favourite, unFavourite } from "../faves-utilities/favSlice";
+import MovieRating from './MovieRating';
 
 
 function SingleMovie({ movie, isFav }) {
@@ -63,13 +63,16 @@ function SingleMovie({ movie, isFav }) {
             </div>
             
             <p className='single-overview'>{movie.overview}</p>
-            <p className='single-rating'>{movie.vote_average}<AiFillStar className='rating-star' /></p>
-        </div>
-        <div className='fav-btn'>
+            <div className='bottom-div'>
+                <MovieRating className='single-rating' rating={movie.vote_average}/> 
+                <div className='fav-btn'>
                 {isFav ? 
                     <FavButton movie={movie} remove={true} handleFavClick={handleFavClick} /> : 
                     <FavButton movie={movie} handleFavClick={handleFavClick} />
                 }
+                </div>
+            </div>
+            
         </div>
       </>
   )
