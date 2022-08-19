@@ -6,6 +6,7 @@ import AboutPage from '../pages/AboutPage';
 import FavoritesPage from '../pages/FavoritesPage';
 import HomePage from '../pages/HomePage';
 import SingleMoviePage from '../pages/SingleMoviePage';
+import SearchPage from '../pages/SearchPage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Route path="/movie/:id" element={<SingleMoviePage/>} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/favs" element={<FavoritesPage />} />
+              <Route path="/results" element={<SearchPage />}/>
 
           </Routes>
         </main>

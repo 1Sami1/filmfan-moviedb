@@ -19,7 +19,7 @@ const SearchBar = (movie) => {
             return;
         }
         e.target.elements.search.value = '';
-        navigate(`/search?q=${searchInput}`, { replace: true })
+        navigate(`/results?q=${searchInput}`, { replace: true })
     }
 
     return(
