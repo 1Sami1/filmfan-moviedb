@@ -5,6 +5,7 @@ import { favourite, unFavourite } from "../faves-utilities/favSlice";
 import FavButton from './FavButton';
 import {format} from "date-fns"
 import { useDispatch } from "react-redux";
+import MovieRating from './MovieRating';
 
 
 
@@ -43,6 +44,7 @@ function MovieCard( { movie, isFav } ) {
                     <div className='on-hover'>
                         <span className='black-bg'></span>
                         <h3 className='hover-title'>{movie.title}</h3>
+                        <MovieRating  rating={movie.vote_average}/>
                         <p className='hover-overview'>{MOVIE_OVERVIEW.substr(0,110)}...</p>
                         <Link className='hover-link' to={`/movie/${movie.id}`}>More Info</Link>
                         
