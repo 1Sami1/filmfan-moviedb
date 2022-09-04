@@ -4,6 +4,13 @@
     margin-top: 5rem;
     display: flex;
     justify-content: center;
+    
+}
+@media (min-width: 1000px) {
+    .search-wrapper{
+        padding-left: 49px;
+    }
+    
 }
 
 .browse-by{
