@@ -11,6 +11,7 @@ function Nav({handleShowHideNav}) {
             e.target.blur();
         }
     }
+    
 
 
     return(
@@ -20,9 +21,10 @@ function Nav({handleShowHideNav}) {
                 <li><NavLink tabIndex={1} to="/">Home</NavLink></li>
                 <li><NavLink tabIndex={2} to="/about">About</NavLink></li>
                 <li><NavLink tabIndex={3} to="/favs">Favorites</NavLink></li>
+                <li></li>
             </ul>
         </nav>
-        <SearchBar />
+        {/* <SearchBar /> */}
         </>
     )
 }
