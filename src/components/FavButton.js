@@ -16,7 +16,7 @@ function FavButton({movie, remove, handleFavClick}) {
       {remove === false ? 
       
             <button onClick={handleAddFav} className="fav-button add-fav">
-            <FontAwesomeIcon className='icon add-fav-bg' icon={faHeart} />Add to Faves</button> : 
+            <FontAwesomeIcon className='icon add-fav-bg' icon={faHeart} />Favorite</button> : 
 
             <button onClick={handleRemoveFav} className="fav-button remove-fav" >
             <FontAwesomeIcon className='icon' icon={faMinus} />
