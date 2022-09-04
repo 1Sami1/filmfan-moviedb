@@ -10,7 +10,6 @@ import MovieRating from './MovieRating';
 
 function SingleMovie({ movie, isFav }) {
 
-    // const [trailerKey, setTrailerKey] = useState(false);
     const dispatch = useDispatch();
 
   function handleFavClick(addToFav, obj){
@@ -21,18 +20,6 @@ function SingleMovie({ movie, isFav }) {
     }  
      
 }
-
-
-    // useEffect(() => {
-    //     const youTubeTrailer = movie.videos.results.find(element => (element.iso_3166_1 === 'US' && element.type === 'Trailer' && element.site === 'YouTube'));
-
-
-    //     if(youTubeTrailer === undefined){
-    //         setTrailerKey(null)
-    //     }else{
-    //         setTrailerKey(youTubeTrailer.key);
-    //     }
-    // }, []);
 
     // turn API runtime into mins and seconds
     let runTime = (movie.runtime);
@@ -69,10 +56,7 @@ function SingleMovie({ movie, isFav }) {
             
            
             {movie.genres && movie.genres.length > 0 && <p className="single-genres">{movie.genres.map((genre) => genre.name).join(', ')}</p>}
-            {/* { (trailerKey === null ) ? null :
-                            <FaYoutube title="Watch Trailer On Youtube" onClick={()=> window.open(`https://www.youtube.com/watch?v=${trailerKey}`, "_blank")}/>
-                        
-                        } */}
+            
 
             <div className='single-div-times'>
                 <p className='single-runtime'>{`${hours}h ${minutes}min`}</p>

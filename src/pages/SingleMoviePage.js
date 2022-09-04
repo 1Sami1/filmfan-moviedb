@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import { appTitle } from "../globals/globals";
 import isFav from '../faves-utilities/isFav';
 import SingleMovie from "../components/SingleMovie";
 import { API_KEY } from "../globals/globals";
@@ -54,6 +55,13 @@ function PageSingleMovie() {
 
 
   }, []);
+
+  useEffect(() => {
+    if (movieData) {
+      document.title = `${movieData.title} - ${appTitle}`
+    }
+    window.scrollTo(0, 0)
+  }, [movieData])
 
   
 
