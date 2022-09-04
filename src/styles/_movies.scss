@@ -25,23 +25,24 @@
 // Movie card styling || Mobile View
 
 .movie-card{
-    transition: all 0.3s ease;
+    overflow: hidden;
+    transition: 0.8s ease-out;
     .movie-poster{
         position: relative;
         overflow: hidden;
-        transition: all 0.3s ease;
     }
     .on-hover{
-        transition: all 0.3s ease;
         position: absolute;
         color: white;
         background-color: rgba(0, 0, 0, 0.8);
         text-align: center;
         z-index: 1;
         top: 0;
+        opacity: 0;
         bottom: 4px;
         display: grid;
         grid-template-columns: 1fr;
+        transition: all 0.5s ease;
         .hover-link{
             color: white;
             height: 25px;
@@ -57,10 +58,11 @@
             text-shadow:  3px 3px 7px #000000;
             text-shadow: 2px 2px 3px #0CCE6B;
             margin: 5px;
-            transition: all 0.3s ease;
+            transition: transform .4s ease 0s;
         }
         .hover-overview{
             margin: 10px;
+            transition: transform .4s ease 0s;
         }
         .movie-rating{
             color: $greenColor;
@@ -78,6 +80,10 @@
 
 .movie-poster:hover .black-bg{
     opacity: .85;
-    transition: all 0.3s ease;
-
+    transition: all 0.3s ease-in-out;
+}
+.movie-poster:hover .on-hover{
+    opacity: 1;
+    transition: all .3s ease-out;
+    z-index:1;
 }
